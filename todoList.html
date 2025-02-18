@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Todo List</h1>
+        <input type="text" name="task" id="task" placeholder="Enter a task">
+        <button onclick="addTask()">Add</button>
+
+        <ul id="list"></ul>
+    </div>
+    
+    <script>    
+
+        tasks = [
+            {
+                id:101,
+                task: "Buy some cocos",
+                completed : false
+            },
+            {
+                id:102,
+                task : "Shopping",
+                completed : false
+            },{
+                id:103,
+                task:"Dancing",
+                completed : false
+            },{
+                id:104,
+                task:"Test1",
+                completed:false
+            }
+        ]
+
+
+        function renderUI(){
+
+            var list = "" 
+            // console.log("Working...")
+            var list = document.getElementById("list");
+
+            tasks.forEach(element => {
+                // console.log(element)
+
+                list.innerHTML += `
+                <li id=${element.id}>${element.task}</li>
+                <button onClick="complete(${element.id})">Completed</button>
+                <button onClick="deleteTask(${element.id})">Delete</button>
+                `
+            });
+
+        
+        }
+
+        renderUI()
+    </script>
+    
+</body>
+</html>
+
+
