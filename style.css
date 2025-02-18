@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tsp-partners{
+    padding-left: 34%;    
+}
+
+/* 
+position
+=> absolute
+=> static
+=> relative
+=> fixed
+=> sticky
+
+display
+=> inline
+=> block
+=> flex
+
+font
+=> size
+=> family
+=> weight
+=> style
+
+color(text color)
+
+margin
+padding
+border
+
+
+*/
+.box{
+    border: 2px solid red;
+    padding: 50px;
+    margin: 2%;
+}
+#box1{
+    background-color: green;
+}
+/* display */
+
+/* block
+inline
+flex */
+
+.boxes{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    color: red;
+        
+}
+#box3{
+    color: red;
+    background-color: brown;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+}
+#box4{
+    background-color: blue;
+    /* position: sticky;
+    bottom: 0px;
+    left: 0px; */
+}
+.nav{
+    
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+/* position + (top, bottom, left, right) */
+
+#box8{
+    position: sticky;
+    bottom: 20px;
+}
+
+
+
+/* class => .class_name
+id => #id_name */
